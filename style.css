@@ -1,0 +1,95 @@
+/* Element/Tag Selection --> Just type tagname{} */
+h1{
+    background-color: chocolate;
+    color: cyan;
+}
+
+/* Grouping section --> tagname, tagname, tagname,..{} */
+h1,p{
+    background-color: crimson;
+    color: aliceblue;
+}
+
+/* Universal Selection --> type --> *{} */
+*{
+   color: crimson;
+}
+
+/* Nested Selection --> tagname space tagname{} */
+ui li a{
+    color: aliceblue;
+    background-color: crimson;
+}
+
+/* Id selection --> #idname{} */
+#sec1 h2{
+    background-color: chocolate;
+    color: cyan;
+}
+#sec2 h2{
+    background-color: cyan;
+    color: chocolate;
+}
+
+/* Class Selection --> .classname{} */
+.btn{
+    background-color: cornsilk;
+}
+
+/* Attribute Selection --> tag name[attributename]{} */
+input[type]{
+background-color: burlywood;
+}
+
+/* Attribute Selection with value --> tag name[attributename="value"]{} */
+input[type="password"]{
+    background-color: crimson;
+    color: aliceblue;
+}
+
+/* Pseudo Class Selection --> tagname:style{} */
+a:hover{
+    color: chartreuse;
+}
+a:active{
+    color: green;
+}
+button:disabled{
+    background-color:black;
+    color:red;
+}
+input:focus{
+    background-color: azure;
+    }
+ui li:last-child{
+    color: white;
+}
+
+/* Pseudo Element Selection --> tagname::style{} */
+p::first-letter{
+    color: azure;
+}
+
+/* Descendent Selection --> tagname space tagname{} */
+div p{
+    color: azure;
+    background-color: black;
+}
+
+/* Child section --> tagname > tagname{} */
+#div1>p{
+    color: azure;
+    background-color: green;
+}
+
+/* Adjascent Selection --> tagname + tagname{} */
+#div1+p{
+    color: white;
+    background-color: green;
+}
+
+/* General Selection --> tagname ~ tagname{} */
+#div1~p{
+    color: white;
+    background-color: green;
+}
